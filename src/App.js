@@ -10,22 +10,7 @@ import Header2 from './Header2';
 import './App.css';
 
 
-const mongoose = require('mongoose');
-  // Conectar a la base de datos usando mongoose
-  mongoose.connect('mongodb://localhost/my-database', {
-    useNewUrlParser: true, // Estos parámetros son recomendados por
-    useUnifiedTopology: true,
-    useCreateIndex: true,
-    useFindAndModify: false,
-  });
-  // Obtener la conexión y manejar errores
-  const db = mongoose.connection;
-  // Si ocurre un error, lo mostramos en la consola
-  db.on('error', console.error.bind(console, 'Connection error:'));
 
-  db.once('open', () => {
-    console.log('MongoDB database connection established successfully');
-  });
 
 function App() {
   
