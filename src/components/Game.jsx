@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import loginPiedra from "../loginPiedra";
+import FormRPSLS from "../loginPiedra";
 
 const options = [
   { id: 0, name: "Piedra", emoji: "🗿", beats: [2, 3] },
@@ -144,6 +146,7 @@ export default function Game() {
               >
                 Jugar de nuevo
               </button>
+              <FormRPSLS result={result}/>
             </div>
           )}
         </div>
