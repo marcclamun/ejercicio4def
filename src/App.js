@@ -7,6 +7,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import React from 'react';
 import Header2 from './Header2';
 import Stats from './components/stats'
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+
 import './App.css';
 
 
